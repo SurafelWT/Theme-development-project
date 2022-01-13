@@ -1,16 +1,18 @@
 <?php
+//get the header
+get_headers();
 
-get_header();
+if(have posts())
+{
+while(have posts())
+the_post();
+?>
+<h1>?>php the_title()?></h1>
 
-if (have_posts()){
-    while(have_posts()){
-        the_post()?>
-        <h1> <a href="<?php the_permalink()?>"><?php the_title()?></a></h1>
-        <?php the_content()?>
-        <?php
-    }
+the_content();
 }
-
+//get the footer
 get_footer();
 
 ?>
+    
